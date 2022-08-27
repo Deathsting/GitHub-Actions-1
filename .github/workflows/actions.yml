@@ -10,8 +10,13 @@ jobs:
         run : |
           pwd
           ls
+          git
       - name: Checkout
         uses: actions/checkout@v1
+      - name: List files After Checkout
+        run : |
+          pwd
+          ls
       - name: Simple JS Actions
         id: greet
         uses: actions/hello-world-javascript-action@v1
